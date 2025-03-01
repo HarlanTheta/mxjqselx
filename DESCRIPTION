@@ -1,0 +1,14 @@
+Package: mxjqselx
+Title: Feature Select
+Version: 0.0.0.9000
+Authors@R: 
+    person("AuTrader", "Moxingjiqi", , "aulihong@qq.com", role = c("aut", "cre"),
+           comment = c(ORCID = ""))
+Description: Feature select.
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    fastmit,
+    pROC
