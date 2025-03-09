@@ -10,7 +10,9 @@ mxjqshapirop <- function(data, xname, yname){
     g <- glevel[i]
     grow <- data[[yname]] == g
     dataxg <- datax[grow]
-    shapiroi <- shapiro.test(dataxg)
+    # shapiroi <- shapiro.test(dataxg)
+    shapiroi <-
+      ks.test(dataxg, "pnorm", mean = mean(dataxg), sd = sd(dataxg))
     shapiro <- c(shapiro, as.numeric(shapiroi$p.value))
   }
   return(shapiro)
